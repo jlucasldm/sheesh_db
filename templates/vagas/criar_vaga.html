@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Home</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.4/css/bulma.css" />
+    <link rel="stylesheet" href="./profile.css">
+    <link rel="stylesheet" href="../../css/body.css">
+    <link rel="stylesheet" href="../../css/header.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+    <script src="https://kit.fontawesome.com/72a7ea144e.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+	<!-- START NAV -->
+	<div class="header-container">
+        <div class="header-links">
+            <a to="/" class="header-title">Sheesh</a>
+        </div>
+    </div>
+	<!-- END NAV -->    
+	<section class="hero is-fullheight">
+		<div class="hero-body">
+			<div class="container has-text-centered">
+                <h1 class="title is-1">Crie uma vaga</h1>
+                <p class="is-size-4">Crie uma oportunidade para encontrar seus próximos talentos.</p>
+				<div class="columns is-8 is-variable ">
+                    <!-- COLUNA ESQUERDA -->
+					<div class="column is-two-thirds is-medium-rounded has-text-left">
+                        <p class="mb-4"></p>
+                        <div class="field">
+                            <label class="label">Título da vaga:</label>
+                            <div class="control">
+                                <input class="input is-medium" type="text">
+                            </div>
+                        </div>
+                        <div class="field">
+                            <label class="label">Requisitos:</label>
+                            <div class="control">
+                                <textarea class="textarea is-medium"></textarea>
+                            </div>
+                        </div>
+                        <div class="field">
+                            <label class="label">Descrição das atividades:</label>
+                            <div class="control">
+                                <textarea class="textarea is-medium"></textarea>
+                            </div>
+                        </div>
+                        <label class="label">Benefícios: (opcional)</label>
+                            <div class="control">
+                                <textarea class="textarea is-medium"></textarea>
+                            </div>
+					</div>
+                    <!-- COLUNA DIREITA -->
+					<div class="column is-one-third has-text-left mt-4">
+                        <label class="label">Remuneração: (opcional)</label>
+                            <div class="control">
+                                <input class="input is-medium mb-5" type="text">
+                            </div>
+                        <label class="label">Carga horária:</label>
+                            <div class="control">
+                                <input class="input is-medium mb-5" type="text">
+                            </div>
+                        <label class="label">Local de trabalho:</label>
+                            <div class="control">
+                                <input class="input is-medium mb-3" type="text">
+                            </div>
+                        <label class="label">Modalidade:</label>
+                        <div class="control">
+                            <label class="radio">
+                                <input type="radio" name="modalidade">
+                                Presencial
+                            </label>
+                            <label class="radio">
+                                <input type="radio" name="modalidade">
+                                Remoto
+                            </label>
+                            <label class="radio">
+                                <input type="radio" name="modalidade">
+                                Misto
+                            </label>
+                            </div>
+                        <label class="label">Prazo:</label>
+                            <div class="control">
+                                <input type="date">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="columns is-8 is-variable is-centered">
+                        <div class="column is-half">                        
+                            <div class="control">
+                                <button type="submit" class="button is-link is-fullwidth has-text-weight-medium is-medium">Criar</button>
+                            </div>
+                    </div>
+                </div>
+			</div>
+		</div>
+	</section>
+
+</body>
+
+</html>
