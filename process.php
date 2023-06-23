@@ -2,6 +2,16 @@
 $IPATH = $_SERVER['DOCUMENT_ROOT'] . "/layout/";
 require_once($IPATH . "header.php")
 ?>
+
+<?php
+$pdo = DB::getConnection();
+
+$query = "SELECT * FROM vagaestagio";
+$stmt = $pdo->query($query);
+
+$rows = $stmt->fetchAll(PDO::FETCH_ASSOC);
+?>
+
 <section class="section">
     <div class="processes-list">
         <div class="top-container">
@@ -32,23 +42,27 @@ require_once($IPATH . "header.php")
                     </tr>
                 </thead>
                 <tbody>
-                    <tr class="sp-table-row">
-                        <td class="selective-process-card">Processo Seletivo 1</td>
-                        <td class="selective-process-card">10/10/2021</td>
-                        <td class="selective-process-card">contato@contato.com</td>
-                        <td class="selective-process-card" style="display: flex;">
-                            <a>
-                                <div class="edit-icon">
-                                    <i class="fa-solid fa-pen"></i>
-                                </div>
-                            </a>
-                            <a>
-                                <div class="trash-icon">
-                                    <i class="fa-solid fa-trash"></i>
-                                </div>
-                            </a>
-                        </td>
-                    </tr>
+                    <?php
+                    foreach ($rows as $row) :
+                    ?>
+                        <tr class="sp-table-row">
+                            <td class="selective-process-card"><?php echo $row['titulo']; ?></td>
+                            <td class="selective-process-card"><?php echo $row['prazo']; ?></td>
+                            <td class="selective-process-card"><?php echo $row['titulo']; ?></td>
+                            <td class="selective-process-card" style="display: flex;">
+                                <a>
+                                    <div class="edit-icon">
+                                        <i class="fa-solid fa-pen"></i>
+                                    </div>
+                                </a>
+                                <a>
+                                    <div class="trash-icon">
+                                        <i class="fa-solid fa-trash"></i>
+                                    </div>
+                                </a>
+                            </td>
+                        </tr>
+                    <?php endforeach; ?>
                 </tbody>
             </table>
         </div>
