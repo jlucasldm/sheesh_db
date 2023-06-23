@@ -14,9 +14,9 @@
 
 1. Baixe e instale o PHP.
 2. Baixe e instale WAMP(windows) ou LAMP(linux).
-3. Cole os arquivos do repositório na pasta www do WAMP/LAMP
-4. Execute o localhost
-5. Para alterar o SCSS, use o a extensão Live Sass Compiler do VSCode
+3. Cole os arquivos do repositório na pasta www do WAMP/LAMP.
+4. Execute o localhost.
+5. Para alterar o SCSS, use o a extensão Live Sass Compiler do VSCode.
 
 ## :two_men_holding_hands: Equipe:
 
