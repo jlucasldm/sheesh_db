@@ -16,9 +16,10 @@
 2. Baixe e instale WAMP(windows) ou LAMP(linux).
 3. Cole os arquivos do repositório na pasta www do WAMP/LAMP.
 4. Abra o phpMyAdmin.
-5. Importe o aquivo db.sql.
-6. Execute o localhost.
-7. Para alterar o SCSS, use o a extensão Live Sass Compiler do VSCode.
+5. Crie um banco de dados com o nome sheesh_db
+6. Importe o aquivo db.sql.
+7. Execute o localhost.
+8. Para alterar o SCSS, use o a extensão Live Sass Compiler do VSCode.
 
 ## :two_men_holding_hands: Equipe:
 
