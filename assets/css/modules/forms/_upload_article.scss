@@ -1,0 +1,53 @@
+.update-article-form {
+  @include form;
+  background-color: #eee;
+  color: #333;
+  width: 90%;
+  box-shadow: 0 -2px 5px 2px rgba(0, 0, 0, 0.7) inset,
+    0 3px 5px 2px rgba(255, 255, 255, 0.3) inset;
+  padding-top: 2%;
+  border-radius: 20px;
+  margin-bottom: 20px;
+  > * {
+    width: 100%;
+  }
+  input[type="submit"] {
+    font-size: 2em;
+    padding: 1% 2%;
+  }
+
+  input,
+  textarea {
+    font-size: 1.3em;
+    margin-bottom: 2%;
+    border-bottom: 1px solid #fe5f00;
+    padding: 1% 2%;
+    outline: none;
+    font-family: serif;
+  }
+  input {
+    font-size: 2em;
+    font-weight: bold;
+  }
+  ::-webkit-file-upload-button {
+    border-radius: 50px;
+    padding: 1% 5%;
+    margin-bottom: 2%;
+    font-size: 1.2em;
+    @media screen and (max-width: 768px) {
+      font-size: 2em;
+    }
+  }
+  label {
+    padding: 1% 2%;
+    font-size: 2em;
+    font-weight: bold;
+    color: #777
+  }
+  #check {
+    
+    margin-bottom: 2%;
+    border-bottom: 1px solid #fe5f00;
+  }
+}
+

@@ -1,0 +1,8 @@
+.login-form{
+    @include form;
+    background-color: #333;
+    color: #FE5F00;
+    box-shadow: 0 0 0 3px #FE5F00, 0 0 0 2px rgba(0,0,0, 0.3);
+    border-top-left-radius: 30%;
+    border-bottom-right-radius: 30%;
+}

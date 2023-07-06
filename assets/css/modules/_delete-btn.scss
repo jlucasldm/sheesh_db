@@ -1,0 +1,18 @@
+.delete-btn{
+    border-radius: 10px;
+    cursor: pointer;
+    background: #FE5F00;
+    border: none;
+    color: white;
+    padding: 2.2% 4.4%;
+    font-size: 1.4rem;
+    outline: none;
+    box-shadow: 0 -5px 5px inset rgba(0, 0, 0, 0.5),
+    0 4px 5px inset rgba(255, 255, 255, 0.3);
+    &:hover {
+        background-color: #fe5d00ee;
+    }
+    &:active{
+        background-color: #fe5d00c2;
+    }
+}

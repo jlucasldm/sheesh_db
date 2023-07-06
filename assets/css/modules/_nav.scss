@@ -1,0 +1,92 @@
+
+.logo{
+    letter-spacing: 2px;
+    color: #FE5F00;
+    font-size: x-large;
+    cursor: default;
+}
+.nav{
+    display: flex;
+    justify-content:space-around;
+    flex-wrap: wrap;
+    padding: 1% 0;
+    width: 40%;
+    border-radius: 10px;
+    background-color: #111;
+    @media screen and (max-width: 1064px) {
+        width: 60%;
+    }
+    @media screen and (max-width:768px) {
+        position: absolute;
+        z-index: 1;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        justify-content: center;
+        left: 100%;
+        top: 45px;
+        width: 100%;
+        background: #333;
+        transition: all 0.3s ease;
+    }
+}
+.nav__item{
+    display: block;
+    color: #eee;
+    text-transform: uppercase;
+    &:hover{
+        color: #FE5F00;
+    }
+    @media screen and (max-width:768px) {
+        border-right: transparent;
+        border-radius: 0;
+        box-shadow:0 1px 5px inset rgba(255, 250, 250, 0.3),
+                    0 -2px 5px  inset rgba(0,0,0, 0.7);
+        padding: 5% 0;
+        font-size: 1.4em;
+    }
+}
+
+.dropdown-btn{
+    position: relative;
+    cursor:pointer;
+}
+.dropdown{
+    position: absolute;
+    z-index: 1;
+    background: #111;
+    width: fit-content;
+    margin-top: 10%;
+    right: 50%;
+    border-radius: 5px;
+    transform: translateX(50%);
+    &__item{
+        display: block;
+        color: #eee;
+        text-transform: uppercase;
+        padding: 20px 20px;
+        border-radius: 5px;
+        &:hover{
+            background: #FE5F00;
+        } 
+    }
+    @media screen and (max-width:768px) {
+    display: none;
+    }
+}
+
+.username{
+    color: #FE5F00;
+    cursor: default;
+}
+.burger{
+    display: none;
+    color: #eee;
+    font-size: 2.4em;
+    &:hover{
+        color: #FE5F00;
+    }
+    @media screen and (max-width:768px) {
+        display: flex
+    }
+}

@@ -1,0 +1,17 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    border: none;
+}
+body,html{
+    height: 100%;
+    
+}
+body{
+    font-family: 'Barlow', sans-serif;
+    background: #ddd;
+    overflow-x: hidden;
+}

@@ -1,0 +1,11 @@
+.l-footer{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    align-items: center;
+    box-shadow: 0 -3px 5px inset rgba(0,0,0, 0.5),
+    0 2px 5px inset rgba(255,255,255,0.3);
+    background: #333;
+    color: #FE5F00;
+    margin-top: 2%;
+}

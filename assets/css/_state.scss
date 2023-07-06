@@ -1,0 +1,20 @@
+.is-hidden{
+    display: none;
+}
+.is-onscreen{
+    left: 0;
+}
+.is-show{
+    display: block;
+}
+.is-mobile{
+    display: none;
+    @media screen and (max-width:768px){
+        display: initial;
+    }
+}
+.is-desktop{
+    @media screen and (max-width:768px){
+        display: none;
+    }
+}

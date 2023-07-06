@@ -1,0 +1,23 @@
+.information{
+    display: block;
+    margin: 25px 0 25px 45px;
+    font-weight: bolder;
+    font-size: 1.1;
+    margin: 0.1% 0;
+    @media screen and (max-width:478px){
+        display: block;
+        text-align: center;
+        margin-left: 0;
+    }
+} 
+
+.icons{
+    i{
+        color: #FE5F00;
+        font-size: 2.4em;
+        margin: 0 10px;
+    }
+    @media screen and (max-width:478px){
+        float: none;
+    }
+}

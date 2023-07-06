@@ -1,0 +1,20 @@
+.update-form{
+    @include form;
+    color: #333;
+    font-weight: bolder;
+    label,input,select,div{
+        width: 100%;
+    }
+    label{
+        margin-bottom: 0;
+    }
+    input{
+        color: #333;
+        padding: 2% 1%;
+        font-size: 1.4em;
+    }
+    input[type='submit']{
+        color: #eee;
+        margin-top: 2%;
+    }
+}
