@@ -1,6 +1,6 @@
-# VAGA
+# sheesh_db 
 
-Foobar is a Python library for dealing with word pluralization.
+Trabalho feito para a disciplina MATA60 - Banco de dados.
 
 ## Instalação
 
@@ -20,13 +20,9 @@ Foobar is a Python library for dealing with word pluralization.
 
 4. Acesse o arquivo [inc/classes/DB.php](inc/classes/DB.php) e adicione as credenciais do banco, nas linhas 13, 14, 15, 16.
 
-## Contributing
+## Créditos
 
-Pull requests are welcome. For major changes, please open an issue first
-to discuss what you would like to change.
-
-Please make sure to update tests as appropriate.
-
-## License
-
-[MIT](https://choosealicense.com/licenses/mit/)
+[Bruno Bacelar](github.com/brunobdcorreia)
+[Felipe Daniel](github.com/Felipe-Daniel)
+[João Lucas](github.com/jlucasldm)
+[Rafael Nagy](github.com/rafaelcnagy)
