@@ -6,12 +6,12 @@ require_once('../config.php');
 
 if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 
-    $adduser = $con->prepare('INSERT INTO aluno (cpf, nome, tel, credencial)
-                            VALUES(:cpf,  :nome, :tel, :credencial)');
+    $adduser = $con->prepare('INSERT INTO aluno (cpf, nome, rg, credencial)
+                            VALUES(:cpf,  :nome, :rg, :credencial)');
     $adduser->execute(array(
         ':cpf' => filter::String($_POST['cpf']),
         ':nome' => filter::String($_POST['nome']),
-        ':tel' => filter::String($_POST['tel']),
+        ':rg' => filter::String($_POST['rg']),
         ':credencial' => filter::String($_POST['credencial']),
 
     ));

@@ -14,8 +14,8 @@ require_once($IPATH . "header.php")
             ­<input type="text" name="cpf" required maxlength="255" value="">
         </div>
         <div class="form-block">
-            <label for="tel">Telefone: </label>
-            ­<input type="text" name="tel" required maxlength="255" value="">
+            <label for="rg">RG: </label>
+            ­<input type="text" name="rg" required maxlength="255" value="">
         </div>
         <div class="form-block">
             <label for="credencial">Credencial: </label>

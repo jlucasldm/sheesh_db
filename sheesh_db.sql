@@ -31,7 +31,6 @@ DROP TABLE IF EXISTS `aluno`;
 CREATE TABLE IF NOT EXISTS `aluno` (
   `cpf` varchar(11) NOT NULL,
   `nome` varchar(45) DEFAULT NULL,
-  `tel` varchar(12) DEFAULT NULL,
   `rg` varchar(12) DEFAULT NULL,
   `credencial` varchar(45) DEFAULT NULL,
   PRIMARY KEY (`cpf`)
@@ -72,7 +71,7 @@ INSERT INTO `empresa` (`cnpj`, `razaoSocial`, `nomeFantasia`, `nomeResponsavel`,
 
 -- --------------------------------------------------------
 
---Google Brasil
+--
 -- Estrutura da tabela `matricula`
 --
 
