@@ -20,6 +20,8 @@ Trabalho feito para a disciplina MATA60 - Banco de dados.
 
 4. Acesse o arquivo [inc/classes/DB.php](inc/classes/DB.php) e adicione as credenciais do banco, nas linhas 13, 14, 15, 16.
 
+5. Abra o navegador e acesse a raiz do projeto (o endereço para a raiz do projeto pode variar de acordo com a maneira que você adicionou o projeto no apache).
+
 ## Créditos
 
 [Bruno Bacelar](github.com/brunobdcorreia)
