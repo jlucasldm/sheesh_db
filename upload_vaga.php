@@ -1,5 +1,5 @@
 <?php
-$IPATH = $_SERVER['DOCUMENT_ROOT'] . "/layout/";
+$IPATH = getcwd() . "/layout/";
 require_once($IPATH . "header.php")
 ?>
 <main>
@@ -43,14 +43,15 @@ require_once($IPATH . "header.php")
           <label for="text" class="form-label" >Conteúdo</label>
           <textarea name="text" id="text" class="form-control" style="border: 1px solid #FE5F00" rows="5" required></textarea>
         </div>
-        <input type="submit" value="Publicar" class="submit-btn">
         <div id="response" class="response"></div>
+
+        <input type="submit" value="Publicar" class="submit-btn">
       </form>
     </div>
   </div>
 </div>
 </main>
-<script src="../assets/js/ajax.js"></script>
+<script src="assets/js/ajax.js"></script>
 <?php
 require_once($IPATH . 'footer.php')
 ?>

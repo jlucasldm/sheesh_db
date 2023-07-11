@@ -3,7 +3,7 @@ const urlSearchParams = new URLSearchParams(window.location.search);
 const params = Object.fromEntries(urlSearchParams.entries());
 if (typeof params["id"] !== "undefined") {
   let request = new XMLHttpRequest();
-  request.open("POST", "inc/ajax/article.php" + "?id=" + params["id"]);
+  request.open("POST", "inc/ajax/vaga.php" + "?id=" + params["id"]);
   request.send();
   request.onreadystatechange = () => {
     if (request.readyState == XMLHttpRequest.DONE) {
@@ -11,11 +11,11 @@ if (typeof params["id"] !== "undefined") {
 
       obj = JSON.parse(obj);
       console.log(obj);
-      article(obj[0]);
+      vaga(obj[0]);
     }
   };
 } else {
-  article({
+  vaga({
     title: "error 404 - page not found: INVALID ID",
     text: "",
     img: "",
@@ -25,8 +25,8 @@ if (typeof params["id"] !== "undefined") {
 }
 
 // this is what gonna be added
-function article(obj) {
-  const container = document.getElementById("article");
+function vaga(obj) {
+  const container = document.getElementById("vaga");
   console.log(obj);
   previews_return = `
   <div class="container">
@@ -58,7 +58,7 @@ function article(obj) {
       Descrição: ${obj["text"]}
     </div>
     <div class="text-center m-5"> 
-      <a href="/" class="btn btn-primary btn-lg">Voltar</a>
+      <a href="index.php" class="btn btn-primary btn-lg">Voltar</a>
     </div>
   </div>`;
   console.log(previews_return);

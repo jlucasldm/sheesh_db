@@ -28,7 +28,7 @@
         LEFT JOIN empresa e on e.cnpj = vaga.cnpj LIMIT 6 OFFSET :start");
         $results->bindParam(':start', $start, PDO::PARAM_INT);
         $results->execute();
-        // $results = $con->query("SELECT * FROM news LIMIT 6 OFFSET '$start'");
+        // $results = $con->query("SELECT * FROM vaga LIMIT 6 OFFSET '$start'");
     };
     
     $row_count = $con->query('SELECT vaga.*, e.nomeFantasia FROM vaga 

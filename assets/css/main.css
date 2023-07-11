@@ -303,29 +303,29 @@ footer, main::after {
   border-color: #eee !important;
 }
 
-.article {
+.vaga {
   margin: 5%;
   color: #222;
   font-family: "Barlow", serif;
 }
-.article__title {
+.vaga__title {
   font-size: 2.5em;
   font-weight: bolder;
   margin-bottom: 5%;
   text-align: center;
 }
-.article__text {
+.vaga__text {
   font-size: 1.2em;
 }
-.article__author {
+.vaga__author {
   text-align: right;
   margin-top: 3%;
   font-family: sans-serif;
 }
-.article__date {
+.vaga__date {
   text-align: right;
 }
-.article img {
+.vaga img {
   float: left;
   margin: 0 2% 2% 0;
   max-width: 40%;
@@ -335,7 +335,7 @@ footer, main::after {
   border: 2px solid #EEE;
 }
 @media screen and (max-width: 768px) {
-  .article img {
+  .vaga img {
     margin: 2%;
     float: none;
     max-width: 100%;
@@ -386,12 +386,12 @@ footer, main::after {
   }
 }
 
-.manage-articles {
+.manage-vagas {
   color: #FE5F00;
   font-weight: bold;
 }
 
-.article-block {
+.vaga-block {
   box-shadow: 0 -2px 5px 2px rgba(0, 0, 0, 0.7) inset, 0 3px 5px 2px rgba(255, 255, 255, 0.3) inset;
   background-color: #eee;
   color: #333;
@@ -401,18 +401,18 @@ footer, main::after {
   height: -moz-fit-content;
   height: fit-content;
 }
-.article-block__title {
+.vaga-block__title {
   text-align: center;
   font-size: 1.5em;
 }
-.article-block__text {
+.vaga-block__text {
   max-height: 400px;
   overflow-y: scroll;
 }
-.article-block__metadata {
+.vaga-block__metadata {
   text-align: right;
 }
-.article-block > * {
+.vaga-block > * {
   margin: 2%;
 }
 
@@ -585,7 +585,7 @@ footer, main::after {
   margin-top: 2%;
 }
 
-.update-article-form {
+.update-vaga-form {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -603,19 +603,19 @@ footer, main::after {
   margin-bottom: 20px;
 }
 @media screen and (max-width: 768px) {
-  .update-article-form {
+  .update-vaga-form {
     width: 80%;
   }
 }
-.update-article-form > * {
+.update-vaga-form > * {
   width: 100%;
 }
-.update-article-form input[type=submit] {
+.update-vaga-form input[type=submit] {
   font-size: 2em;
   padding: 1% 2%;
 }
-.update-article-form input,
-.update-article-form textarea {
+.update-vaga-form input,
+.update-vaga-form textarea {
   font-size: 1.3em;
   margin-bottom: 2%;
   border-bottom: 1px solid #fe5f00;
@@ -623,28 +623,28 @@ footer, main::after {
   outline: none;
   font-family: serif;
 }
-.update-article-form input {
+.update-vaga-form input {
   font-size: 2em;
   font-weight: bold;
 }
-.update-article-form ::-webkit-file-upload-button {
+.update-vaga-form ::-webkit-file-upload-button {
   border-radius: 50px;
   padding: 1% 5%;
   margin-bottom: 2%;
   font-size: 1.2em;
 }
 @media screen and (max-width: 768px) {
-  .update-article-form ::-webkit-file-upload-button {
+  .update-vaga-form ::-webkit-file-upload-button {
     font-size: 2em;
   }
 }
-.update-article-form label {
+.update-vaga-form label {
   padding: 1% 2%;
   font-size: 2em;
   font-weight: bold;
   color: #777;
 }
-.update-article-form #check {
+.update-vaga-form #check {
   margin-bottom: 2%;
   border-bottom: 1px solid #fe5f00;
 }

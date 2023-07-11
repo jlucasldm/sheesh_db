@@ -32,7 +32,7 @@ function preview(data){
           <div class="col card-text h4">R$${obj['remuneracao']},00</div>
           <div class="col card-text h4 text-end">${obj['carga_horaria']} horas</div>
         </div>
-        <a href="article.php?id=${obj['id']}" class="btn btn-primary">Ver vaga</a>
+        <a href="vaga.php?id=${obj['id']}" class="btn btn-primary">Ver vaga</a>
       </div>
     </div>`;
     container.innerHTML = previews_return;

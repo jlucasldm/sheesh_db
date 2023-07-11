@@ -8,7 +8,7 @@ if(!defined('__CONFIG__')) {
     class Check{
         public static function level_check($page_level){
             if($_SESSION['level'] < $page_level){
-                header('location: ../index.php');
+                header('location: index.php');
             }
         }
         public static function login_check(){

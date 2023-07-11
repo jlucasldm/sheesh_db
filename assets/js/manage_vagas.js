@@ -28,22 +28,22 @@ request.onreadystatechange = () => {
     data = request.responseText;
     data = JSON.parse(data);
     console.log(data);
-    manage_articles(data["results"]);
-    pagination(data["page"], data["number_of_pages"], "manage_articles.php");
+    manage_vagas(data["results"]);
+    pagination(data["page"], data["number_of_pages"], "manage_vagas.php");
   }
 };
 
-function manage_articles(data) {
-  const container = document.getElementById("manage_articles");
+function manage_vagas(data) {
+  const container = document.getElementById("manage_vagas");
   previews_return = "";
   data.forEach((obj) => {
     console.log(obj);
     previews_return += `
-        <div class='article-block' id=${obj["id"]}>
-            <div class='article-block__title'>${obj["title"]}</div>
-            <div class='article-block__text'> ${obj["text"]}</div>
-            <div class='article-block__metadata'>Requisitos: ${obj["requisitos"]}</div>
-            <div class='article-block__metadata'>Prazo: ${obj["prazo"]} até ${obj["final"]}</div>
+        <div class='vaga-block' id=${obj["id"]}>
+            <div class='vaga-block__title'>${obj["title"]}</div>
+            <div class='vaga-block__text'> ${obj["text"]}</div>
+            <div class='vaga-block__metadata'>Requisitos: ${obj["requisitos"]}</div>
+            <div class='vaga-block__metadata'>Prazo: ${obj["prazo"]} até ${obj["final"]}</div>
             <button class='delete-btn' onclick="delete_ajax(${obj["id"]}, 'vaga')">DELETAR</button>
         </div> `;
     container.innerHTML = previews_return;

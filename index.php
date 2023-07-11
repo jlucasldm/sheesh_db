@@ -1,5 +1,5 @@
     <?php
-        $IPATH = $_SERVER['DOCUMENT_ROOT'] . "/layout/";
+        $IPATH = getcwd() . "/layout/";
         require_once($IPATH . "header.php")
     ?>
     <main>

@@ -3,7 +3,6 @@
 define('__CONFIG__', true);
 require_once('../config.php');
 
-print_r($_POST);
 if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 
     $adduser = $con->prepare('INSERT INTO empresa (cnpj, razaoSocial, nomeFantasia, nomeResponsavel, site, endereco, areaAtuacao)
@@ -18,8 +17,8 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
         ':endereco' => filter::String($_POST['endereco']),
         ':areaAtuacao' => filter::String($_POST['areaAtuacao']),
     ));
-   
     $return['error'] = 'Conta criada com sucesso';
-    echo json_encode($return, JSON_PRETTY_PRINT);
-    die;
+    
 };
+echo json_encode($return, JSON_PRETTY_PRINT);
+die;

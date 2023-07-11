@@ -12,16 +12,8 @@
 
     $page_count = 6;
 
-    // extra layer of security
-    if($db=='users'){
-        $query= "SELECT * FROM users LIMIT 6 OFFSET :start";
-        $query_count = 'SELECT * FROM users';
-    }elseif($db=='sheesh_db'){
-        $query= "SELECT * FROM vaga LIMIT 6 OFFSET :start";
-        $query_count = 'SELECT * FROM vaga';
-    }else{
-        die('Invalid database');
-    };
+    $query= "SELECT * FROM vaga LIMIT 6 OFFSET :start";
+    $query_count = 'SELECT * FROM vaga';
     $start = ($page-1) * $page_count;
     $results = $con->prepare($query);
     $results->bindParam(':start', $start, PDO::PARAM_INT);

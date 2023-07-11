@@ -3,11 +3,10 @@
 define('__CONFIG__', true);
 require_once('../config.php');
 
-print_r($_POST);
 if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 
-    $add_news = $con->prepare('INSERT INTO vaga (title, requisitos, text, beneficios, remuneracao, carga_horaria, prazo, final, cnpj ) VALUES(:title,:requisitos, :text, :beneficios, :remuneracao, :carga_horaria, :prazo, :final, :cnpj)');
-    $add_news->execute(array(
+    $add_vaga = $con->prepare('INSERT INTO vaga (title, requisitos, text, beneficios, remuneracao, carga_horaria, prazo, final, cnpj ) VALUES(:title,:requisitos, :text, :beneficios, :remuneracao, :carga_horaria, :prazo, :final, :cnpj)');
+    $add_vaga->execute(array(
         ':title' => Filter::String($_POST['title']),
         ':requisitos' => Filter::String($_POST['requisitos']),
         ':text' => Filter::String($_POST['text']),

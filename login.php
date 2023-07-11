@@ -1,5 +1,5 @@
     <?php
-        $IPATH = $_SERVER['DOCUMENT_ROOT'] . "/layout/";
+        $IPATH = getcwd() . "/layout/";
         require_once($IPATH . "header.php")
     ?>
     <main>
@@ -17,7 +17,7 @@
             <div id="response" class="response"></div>
         </form>
     </main>
-    <script src="../assets/js/ajax.js"></script>
+    <script src="assets/js/ajax.js"></script>
     <?php
         require_once($IPATH . 'footer.php')
     ?>
